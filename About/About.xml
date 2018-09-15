@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+<name>Pauseable Stonecutting</name>
+<author>✬Rustic Fox✬</author>
+<url>https://ludeon.com/forums/index.php?topic=37787.0\</url>
+<targetVersion>0.19.2009</targetVersion>
+<description>
+Is your stonecutting bull taking too long? Are you hunry, tired? don't want to lose all the progress you made on the bill?
+Look no further than Pauseable Stonecutting! Start cutting stone take a break! and come back when you have time and continue where you left off!
+
+Yes! The unfinished texture is one of the old stonechuncks. People who played rimworld for a long time will remember them.
+=====
+
+Bugs:
+- *Warning* Does not work on cut any stone it caused to many issues *Warning*
+=====
+
+InCompatibile:
+- None Known
+=====
+
+Supported Mods:
+- Bulk Stone Cutting By: ME
+- [TWC] Cupros Stone's By: The White Crayon
+- Skilled Stonecutting By: PinoChemicali
+
+=====
+
+Credits: 
+Albion - Input
+
+Version: 1.0.0
+</description>
+</ModMetaData>

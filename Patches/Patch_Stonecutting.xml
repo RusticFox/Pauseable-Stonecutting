@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/RecipeDef[@Name = "MakeStoneBlocksBase"]</xpath>
+		<value>
+	        <unfinishedThingDef>UnfinishedStone</unfinishedThingDef>
+		</value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName = "Make_StoneBlocksAny"]</xpath>
+		  <value>
+	<RecipeDef ParentName="MakeStoneBlocksBaseAny">
+		<defName>Make_StoneBlocksAny</defName>
+		<label>make any stone blocks</label>
+		<description>Cut rock chunks into usable stone blocks.</description>
+		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+	</RecipeDef>
+		  </value>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Skilled Stonecutting</modName>
+				<yourMod>Pauseable Stonecutting</yourMod>
+				<customMessageSuccess>Pauseable Stonecutting: Mod named "Skilled Stonecutting" detected, Adding Patch.</customMessageSuccess>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeStoneBlocksBaseAny"]</xpath>
+		        <value>
+	        	    <workSkill>Crafting</workSkill>
+	       		    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+		        </value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[@Name="MakeStoneBlocksBaseAny"]/workSpeedStat</xpath>
+		        <value>
+	       		    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		        </value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Bulk Stone Cutting</modName>
+				<yourMod>Pauseable Stonecutting</yourMod>
+				<customMessageSuccess>Pauseable Stonecutting: Mod named "Bulk Stone Cutting" detected, Adding Patch.</customMessageSuccess>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseNoElec"]</xpath>
+		        <value>
+	                <unfinishedThingDef>UnfinishedStone</unfinishedThingDef>
+		        </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseNoElec10"]</xpath>
+		        <value>
+	                <unfinishedThingDef>UnfinishedStone</unfinishedThingDef>
+		        </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseElec"]</xpath>
+		        <value>
+	                <unfinishedThingDef>UnfinishedStone</unfinishedThingDef>
+		        </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseElec10"]</xpath>
+		        <value>
+	                <unfinishedThingDef>UnfinishedStone</unfinishedThingDef>
+		        </value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>
